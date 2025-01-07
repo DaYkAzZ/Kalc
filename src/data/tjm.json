@@ -1,0 +1,73 @@
+[
+    {
+      "role": "Chef de projet",
+      "juniorTJM": 800,
+      "seniorTJM": 1300
+    },
+    {
+      "role": "Product Owner",
+      "juniorTJM": 800,
+      "seniorTJM": 1300
+    },
+    {
+      "role": "Designer UI/UX",
+      "juniorTJM": 700,
+      "seniorTJM": 1200
+    },
+    {
+      "role": "Head of Design",
+      "juniorTJM": 900,
+      "seniorTJM": 1400
+    },
+    {
+      "role": "Développeur Front",
+      "juniorTJM": 700,
+      "seniorTJM": 1160
+    },
+    {
+      "role": "Développeur Back",
+      "juniorTJM": 720,
+      "seniorTJM": 1180
+    },
+    {
+      "role": "Développeur API",
+      "juniorTJM": 730,
+      "seniorTJM": 1200
+    },
+    {
+      "role": "Lead Developer",
+      "juniorTJM": 820,
+      "seniorTJM": 1340
+    },
+    {
+      "role": "Architecte Technique",
+      "juniorTJM": 900,
+      "seniorTJM": 1400
+    },
+    {
+      "role": "Ingénieur DevOps",
+      "juniorTJM": 740,
+      "seniorTJM": 1240
+    },
+    {
+      "role": "Formateur",
+      "juniorTJM": 680,
+      "seniorTJM": 1100
+    },
+    {
+      "role": "Testeur QA",
+      "juniorTJM": 600,
+      "seniorTJM": 1000
+    },
+    {
+      "role": "Expert en sécurité informatique",
+      "juniorTJM": 760,
+      "seniorTJM": 1340
+    },
+    {
+      "role": "Expert en accessibilité",
+      "juniorTJM": 900,
+      "seniorTJM": 1400
+    }
+  ]
+  
