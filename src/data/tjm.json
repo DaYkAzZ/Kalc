@@ -1,73 +1,114 @@
 [
-    {
-      "role": "Chef de projet",
-      "juniorTJM": 800,
-      "seniorTJM": 1300
-    },
-    {
-      "role": "Product Owner",
-      "juniorTJM": 800,
-      "seniorTJM": 1300
-    },
-    {
-      "role": "Designer UI/UX",
-      "juniorTJM": 700,
-      "seniorTJM": 1200
-    },
-    {
-      "role": "Head of Design",
-      "juniorTJM": 900,
-      "seniorTJM": 1400
-    },
-    {
-      "role": "Développeur Front",
-      "juniorTJM": 700,
-      "seniorTJM": 1160
-    },
-    {
-      "role": "Développeur Back",
-      "juniorTJM": 720,
-      "seniorTJM": 1180
-    },
-    {
-      "role": "Développeur API",
-      "juniorTJM": 730,
-      "seniorTJM": 1200
-    },
-    {
-      "role": "Lead Developer",
-      "juniorTJM": 820,
-      "seniorTJM": 1340
-    },
-    {
-      "role": "Architecte Technique",
-      "juniorTJM": 900,
-      "seniorTJM": 1400
-    },
-    {
-      "role": "Ingénieur DevOps",
-      "juniorTJM": 740,
-      "seniorTJM": 1240
-    },
-    {
-      "role": "Formateur",
-      "juniorTJM": 680,
-      "seniorTJM": 1100
-    },
-    {
-      "role": "Testeur QA",
-      "juniorTJM": 600,
-      "seniorTJM": 1000
-    },
-    {
-      "role": "Expert en sécurité informatique",
-      "juniorTJM": 760,
-      "seniorTJM": 1340
-    },
-    {
-      "role": "Expert en accessibilité",
-      "juniorTJM": 900,
-      "seniorTJM": 1400
-    }
-  ]
-  
+  {
+    "role": "Chef de projet",
+    "juniorTJM": 800,
+    "seniorTJM": 1300,
+    "averageMonthlyDays": 20,
+    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "specialties": ["Agile", "Gestion de planning", "Coordination inter-équipes"]
+  },
+  {
+    "role": "Product Owner",
+    "juniorTJM": 800,
+    "seniorTJM": 1300,
+    "averageMonthlyDays": 20,
+    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "specialties": ["Gestion du backlog", "Collaboration client", "Roadmap produit"]
+  },
+  {
+    "role": "Designer UI/UX",
+    "juniorTJM": 700,
+    "seniorTJM": 1200,
+    "averageMonthlyDays": 20,
+    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "specialties": ["Wireframing", "Prototypage", "Tests utilisateurs"]
+  },
+  {
+    "role": "Head of Design",
+    "juniorTJM": 900,
+    "seniorTJM": 1400,
+    "averageMonthlyDays": 18,
+    "experienceLevels": ["Senior", "Expert"],
+    "specialties": ["Direction artistique", "Management d'équipe", "Stratégie design"]
+  },
+  {
+    "role": "Développeur Front",
+    "juniorTJM": 700,
+    "seniorTJM": 1160,
+    "averageMonthlyDays": 22,
+    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "specialties": ["React", "Vue.js", "Optimisation des performances"]
+  },
+  {
+    "role": "Développeur Back",
+    "juniorTJM": 720,
+    "seniorTJM": 1180,
+    "averageMonthlyDays": 22,
+    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "specialties": ["Node.js", "Python", "Bases de données"]
+  },
+  {
+    "role": "Développeur API",
+    "juniorTJM": 730,
+    "seniorTJM": 1200,
+    "averageMonthlyDays": 22,
+    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "specialties": ["Conception API REST", "GraphQL", "Authentification"]
+  },
+  {
+    "role": "Lead Developer",
+    "juniorTJM": 820,
+    "seniorTJM": 1340,
+    "averageMonthlyDays": 20,
+    "experienceLevels": ["Senior", "Expert"],
+    "specialties": ["Code review", "Mentorat", "Architecture logicielle"]
+  },
+  {
+    "role": "Architecte Technique",
+    "juniorTJM": 900,
+    "seniorTJM": 1400,
+    "averageMonthlyDays": 18,
+    "experienceLevels": ["Senior", "Expert"],
+    "specialties": ["Cloud", "Scalabilité", "Sécurité"]
+  },
+  {
+    "role": "Ingénieur DevOps",
+    "juniorTJM": 740,
+    "seniorTJM": 1240,
+    "averageMonthlyDays": 20,
+    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "specialties": ["CI/CD", "Infrastructure as Code", "Monitoring"]
+  },
+  {
+    "role": "Formateur",
+    "juniorTJM": 680,
+    "seniorTJM": 1100,
+    "averageMonthlyDays": 15,
+    "experienceLevels": ["Confirmé", "Senior"],
+    "specialties": ["Formation technique", "Soft skills", "Workshops"]
+  },
+  {
+    "role": "Testeur QA",
+    "juniorTJM": 600,
+    "seniorTJM": 1000,
+    "averageMonthlyDays": 22,
+    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "specialties": ["Tests manuels", "Automatisation", "Gestion des bugs"]
+  },
+  {
+    "role": "Expert en sécurité informatique",
+    "juniorTJM": 760,
+    "seniorTJM": 1340,
+    "averageMonthlyDays": 18,
+    "experienceLevels": ["Senior", "Expert"],
+    "specialties": ["Audit sécurité", "Pentest", "Gestion des vulnérabilités"]
+  },
+  {
+    "role": "Expert en accessibilité",
+    "juniorTJM": 900,
+    "seniorTJM": 1400,
+    "averageMonthlyDays": 18,
+    "experienceLevels": ["Senior", "Expert"],
+    "specialties": ["Accessibilité web", "Normes WCAG", "Audit UX inclusif"]
+  }
+]
