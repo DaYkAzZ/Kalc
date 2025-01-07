@@ -2,6 +2,9 @@
 
 Kalc est une application web conçue pour aider les Chief Technology Officers (CTOs) à calculer leur budget lorsqu'ils démarrent un nouveau projet. Elle offre une interface complète et conviviale pour estimer les coûts et gérer efficacement la planification financière.
 
+
+![Kalc Logo](../Kalc/src/assets/Kalc.svg)
+
 ## Fonctionnalités
 
 - **Estimation du budget** : Estimez rapidement le budget nécessaire pour votre projet.
@@ -28,7 +31,7 @@ Pour commencer avec Kalc, suivez ces étapes :
     ```
 4. Démarrez l'application :
     ```bash
-    npm start
+    npm run dev
     ```
 
 ## Utilisation
