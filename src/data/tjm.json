@@ -4,7 +4,7 @@
     "juniorTJM": 800,
     "seniorTJM": 1300,
     "averageMonthlyDays": 20,
-    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["Agile", "Gestion de planning", "Coordination inter-équipes"]
   },
   {
@@ -12,7 +12,7 @@
     "juniorTJM": 800,
     "seniorTJM": 1300,
     "averageMonthlyDays": 20,
-    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["Gestion du backlog", "Collaboration client", "Roadmap produit"]
   },
   {
@@ -20,7 +20,7 @@
     "juniorTJM": 700,
     "seniorTJM": 1200,
     "averageMonthlyDays": 20,
-    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["Wireframing", "Prototypage", "Tests utilisateurs"]
   },
   {
@@ -28,7 +28,7 @@
     "juniorTJM": 900,
     "seniorTJM": 1400,
     "averageMonthlyDays": 18,
-    "experienceLevels": ["Senior", "Expert"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["Direction artistique", "Management d'équipe", "Stratégie design"]
   },
   {
@@ -36,7 +36,7 @@
     "juniorTJM": 700,
     "seniorTJM": 1160,
     "averageMonthlyDays": 22,
-    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["React", "Vue.js", "Optimisation des performances"]
   },
   {
@@ -44,7 +44,7 @@
     "juniorTJM": 720,
     "seniorTJM": 1180,
     "averageMonthlyDays": 22,
-    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["Node.js", "Python", "Bases de données"]
   },
   {
@@ -52,7 +52,7 @@
     "juniorTJM": 730,
     "seniorTJM": 1200,
     "averageMonthlyDays": 22,
-    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["Conception API REST", "GraphQL", "Authentification"]
   },
   {
@@ -60,7 +60,7 @@
     "juniorTJM": 820,
     "seniorTJM": 1340,
     "averageMonthlyDays": 20,
-    "experienceLevels": ["Senior", "Expert"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["Code review", "Mentorat", "Architecture logicielle"]
   },
   {
@@ -68,7 +68,7 @@
     "juniorTJM": 900,
     "seniorTJM": 1400,
     "averageMonthlyDays": 18,
-    "experienceLevels": ["Senior", "Expert"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["Cloud", "Scalabilité", "Sécurité"]
   },
   {
@@ -76,7 +76,7 @@
     "juniorTJM": 740,
     "seniorTJM": 1240,
     "averageMonthlyDays": 20,
-    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["CI/CD", "Infrastructure as Code", "Monitoring"]
   },
   {
@@ -84,7 +84,7 @@
     "juniorTJM": 680,
     "seniorTJM": 1100,
     "averageMonthlyDays": 15,
-    "experienceLevels": ["Confirmé", "Senior"],
+    "experienceLevels":  ["Junior", "Senior"],
     "specialties": ["Formation technique", "Soft skills", "Workshops"]
   },
   {
@@ -92,7 +92,7 @@
     "juniorTJM": 600,
     "seniorTJM": 1000,
     "averageMonthlyDays": 22,
-    "experienceLevels": ["Junior", "Confirmé", "Senior"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["Tests manuels", "Automatisation", "Gestion des bugs"]
   },
   {
@@ -100,7 +100,7 @@
     "juniorTJM": 760,
     "seniorTJM": 1340,
     "averageMonthlyDays": 18,
-    "experienceLevels": ["Senior", "Expert"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["Audit sécurité", "Pentest", "Gestion des vulnérabilités"]
   },
   {
@@ -108,7 +108,7 @@
     "juniorTJM": 900,
     "seniorTJM": 1400,
     "averageMonthlyDays": 18,
-    "experienceLevels": ["Senior", "Expert"],
+    "experienceLevels": ["Junior", "Senior"],
     "specialties": ["Accessibilité web", "Normes WCAG", "Audit UX inclusif"]
   }
 ]
