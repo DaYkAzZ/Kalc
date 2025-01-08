@@ -17,12 +17,11 @@ function App() {
           } else {
             setCalc(true)
           }
-        }} style={{
-          borderColor: calc ? 'red' : 'rgb(59, 130, 246)',
-        }} className={`border-2 border-blue-500 text-lg mt-5 p-3 rounded-xl text-white`}>
+        }} className={`text-lg mt-5 p-3 rounded-xl text-white font-thin`}>
           {calc ? 'Fermer' : 'Calculer'}
+          <i className={`ri-arrow-right-up-line m-1 text-xl`}></i>
         </button>
-        <div className={`transition-all duration-1000 ${calc ? 'opacity-100' : 'opacity-0'} ${calc ? 'scale-100' : 'scale-75'} ${calc ? 'p-16' : 'p-0'}`}>
+        <div className={`transition-all transition-ease-in-out duration-1000 ${calc ? 'opacity-100' : 'opacity-0'} ${calc ? 'scale-100' : 'scale-75'} ${calc ? 'p-16' : 'p-0'}`}>
           {calc && <Calc />}
         </div>
       </div>
