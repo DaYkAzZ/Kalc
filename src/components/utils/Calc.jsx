@@ -30,9 +30,9 @@ export function Calc() {
                             : 0;
             }
         }
-
         setWorkers(updatedWorkers);
     };
+
 
     return (
         <div className="w-[900px] rounded-lg shadow-md flex flex-col p-10 text-black bg-white">
@@ -122,20 +122,20 @@ export function Calc() {
                                         />
                                     </label>
                                 </div>
+                                <hr />
+                                <div>
+                                    <h2 className='text-lg my-3'>
+                                        Résultat du chiffrage
+                                    </h2>
+                                    <hr />
+                                    <div className='bg-gradient-to-tl from-fuchsia-500 to-blue-500 shadow-md rounded-md p-10'>
+                                        <span className='text-5xl flex justify-center items-center text-white'>
+                                            {worker.tjm * worker.days} €
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         ))}
-                    </div>
-                    <hr />
-                    <div>
-                        <h2 className='text-lg my-3'>
-                            Résultat du chiffrage
-                        </h2>
-                        <hr />
-                        <div className='bg-gradient-to-tl from-fuchsia-500 to-blue-500 shadow-md rounded-md p-10'>
-                            <span className='text-5xl flex justify-center items-center text-white'>
-                                18 780€
-                            </span>
-                        </div>
                     </div>
                 </div>
             </form>
