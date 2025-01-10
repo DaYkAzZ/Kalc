@@ -19,7 +19,7 @@ Pour commencer avec Kalc, suivez ces étapes :
 
 1. Clonez le dépôt :
     ```bash
-    git clone https://github.com/yourusername/kalc.git
+    git clone https://github.com/DaYkAzZ/kalc.git
     ```
 2. Accédez au répertoire du projet :
     ```bash
