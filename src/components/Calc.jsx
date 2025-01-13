@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import tjmData from '../data/tjm.json';
 import { NewProfileForm } from './NewProfileForm';
-import { use } from 'react';
 
 export function Calc() {
-    const [workers, setWorkers] = useState([]);
 
+    const [workers, setWorkers] = useState([]);
     const addProfile = (e) => {
         e.preventDefault();
         setWorkers([
@@ -30,12 +29,13 @@ export function Calc() {
                         : updatedWorkers[index].experienceLevel === 'Senior'
                             ? workerData.seniorTJM
                             : 0;
-            }   
+            }
         }
         setWorkers(updatedWorkers);
     };
 
     const [displayForm, setDisplayForm] = useState(false)
+
 
     return (
         <div className="w-[900px] rounded-lg shadow-md flex flex-col p-10 text-black bg-white">
@@ -151,17 +151,6 @@ export function Calc() {
                                         </label>
                                     </div>
                                     <hr />
-                                    <div>
-                                        <h2 className='text-lg my-3'>
-                                            Résultat du chiffrage
-                                        </h2>
-                                        <hr />
-                                        <div className='bg-gradient-to-tl from-fuchsia-500 to-blue-500 shadow-md rounded-md p-10'>
-                                            <span className='text-5xl flex justify-center items-center text-white'>
-                                                {worker.tjm * worker.days} €
-                                            </span>
-                                        </div>
-                                    </div>
                                 </div>
                             ))}
                         </div>
