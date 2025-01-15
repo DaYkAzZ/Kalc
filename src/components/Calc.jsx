@@ -3,13 +3,13 @@ import tjmData from '../data/tjm.json';
 import { NewProfileForm } from './NewProfileForm';
 
 export function Calc() {
-
     const [workers, setWorkers] = useState([]);
+
     const addProfile = (e) => {
         e.preventDefault();
         setWorkers([
             ...workers,
-            { experienceLevel: '', role: '', tjm: 0, days: 0 }, // Profil initial vide
+            { experienceLevel: '', role: '', tjm: 0, days: 0 },  // Profil vide initial
         ]);
     };
 
@@ -17,7 +17,6 @@ export function Calc() {
         const updatedWorkers = [...workers];
         updatedWorkers[index][field] = value;
 
-        // Met à jour automatiquement le TJM si `role` ou `experienceLevel` change
         if (field === 'role' || field === 'experienceLevel') {
             const workerData = tjmData.find(
                 (worker) => worker.role === updatedWorkers[index].role
@@ -27,22 +26,27 @@ export function Calc() {
                     updatedWorkers[index].experienceLevel === 'Junior'
                         ? workerData.juniorTJM
                         : updatedWorkers[index].experienceLevel === 'Senior'
-                            ? workerData.seniorTJM
-                            : 0;
+                        ? workerData.seniorTJM
+                        : 0;
             }
         }
         setWorkers(updatedWorkers);
     };
 
-    const [displayForm, setDisplayForm] = useState(false)
+    const [displayForm, setDisplayForm] = useState(false);
 
+    const [total, setTotal] = useState(0);
+
+    const calculate = () => {
+        setTotal(workers.reduce((acc, worker) => acc + (worker.tjm * worker.days), 0));
+    };
 
     return (
         <div className="w-[900px] rounded-lg shadow-md flex flex-col p-10 text-black bg-white">
             {displayForm && (
                 <div className="fixed inset-0 flex items-center justify-center z-50">
                     <div className="bg-white p-5 rounded-lg shadow-lg">
-                        <NewProfileForm />
+                        <NewProfileForm setWorkers={setWorkers} />
                         <button
                             onClick={() => setDisplayForm(false)}
                             className="bg-red-500 text-white p-2 rounded-lg mt-2"
@@ -52,15 +56,13 @@ export function Calc() {
                     </div>
                 </div>
             )}
-            <div style={{
-                filter: displayForm ? 'blur(15px)' : 'none',
-            }}>
+            <div style={{ filter: displayForm ? 'blur(5px)' : 'none' }}>
                 <h1 className="font-bold text-4xl py-2 mb-5 bg-gradient-to-l from-fuchsia-500 to-blue-600 bg-clip-text text-transparent">
                     Chiffrer votre projet
                 </h1>
                 <form className="flex flex-col">
                     <div>
-                        <div className='flex justify-between'>
+                        <div className="flex justify-between">
                             <div>
                                 <h2 className="text-lg my-3">Parties prenantes du projet</h2>
                             </div>
@@ -70,13 +72,13 @@ export function Calc() {
                                         e.preventDefault();
                                         setDisplayForm(true);
                                     }}
-                                    className="bg-blue-500 text-white p-2 m-1 rounded-lg mt-2"
+                                    className="bg-gradient-to-bl from-fuchsia-500 to-blue-600 text-white p-2 m-1 rounded-lg mt-2"
                                 >
                                     <i className="ri-add-line"></i> Nouv. Profil
                                 </button>
                                 <button
                                     onClick={addProfile}
-                                    className="bg-blue-500 text-white p-2 m-1 rounded-lg mt-2"
+                                    className="bg-gradient-to-br from-fuchsia-500 to-blue-600 text-white p-2 m-1 rounded-lg mt-2"
                                 >
                                     <i className="ri-add-line"></i> Profil pré-existants
                                 </button>
@@ -155,7 +157,13 @@ export function Calc() {
                             ))}
                         </div>
                     </div>
+                    <div className='bg-gradient-to-l from-fuchsia-500 to-blue-600 bg-clip-text text-transparent items-center flex justify-center p-5 text-5xl'>
+                        {total ? total : "Votre total s'affichera ici..."} €
+                    </div>
                 </form>
+                <button onClick={calculate} className='bg-blue-500 p-1 text-white rounded-md flex justify-center m-auto items-center'>
+                    Résultat <i className={`ri-arrow-right-up-line m-1 items-center`}></i>
+                </button>
             </div>
         </div>
     );
